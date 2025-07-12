@@ -9,7 +9,7 @@ from logger import Logger
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # MNIST dataset 
-dataset = torchvision.datasets.MNIST(root='../../data', 
+dataset = torchvision.datasets.MNIST(root='root/nn_base/data', 
                                      train=True, 
                                      transform=transforms.ToTensor(),  
                                      download=True)
